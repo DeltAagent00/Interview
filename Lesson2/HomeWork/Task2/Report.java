@@ -8,9 +8,8 @@ class Report{
 		items.add(new ReportItem("First", (float)5));
 		items.add(new ReportItem("Second", (float)6));
 	}
-	
-	public void output(){
-		PrintReport reportPrint = new PrintReport();
-		reportPrint.output(items);
+
+	public List<ReportItem> getReportItems() {
+		return items
 	}
 }
